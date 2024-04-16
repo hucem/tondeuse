@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/tondeuse-application">
+      <excludeFolder url="file://$MODULE_DIR$/tondeuse-application/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/tondeuse-application/tmp" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="3ae5f7df-7033-4bff-b177-469da6530038" />
+  </component>
+</module>

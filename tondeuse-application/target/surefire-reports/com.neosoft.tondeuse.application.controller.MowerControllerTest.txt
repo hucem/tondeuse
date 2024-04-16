@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.neosoft.tondeuse.application.controller.MowerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.787 s -- in com.neosoft.tondeuse.application.controller.MowerControllerTest

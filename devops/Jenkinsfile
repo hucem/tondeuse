@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+
+    environment {
+        // les variables d'environnement
+        DOCKER_REGISTRY = 'url-egistre-docker'
+        KUBE_NAMESPACE = 'url-kubernetes'
+        KUBE_DEPLOYMENT = 'url-kubernetes'
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+
+        stage('Dockerize') {
+            steps {
+                sh 'docker build -t $DOCKER_REGISTRY/$KUBE_DEPLOYMENT .'
+                sh 'docker push $DOCKER_REGISTRY/$KUBE_DEPLOYMENT'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                script {
+                    sh "kubectl apply -f kubernetes/deployment.yaml --namespace=$KUBE_NAMESPACE"
+                }
+            }
+        }
+    }
+}

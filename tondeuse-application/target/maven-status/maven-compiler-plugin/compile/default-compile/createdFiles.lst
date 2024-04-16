@@ -1,0 +1,3 @@
+com\neosoft\tondeuse\application\controller\MowerController.class
+com\neosoft\tondeuse\application\utils\MowerFileProcessor.class
+com\neosoft\tondeuse\application\TondeuseApplication.class

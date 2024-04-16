@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tondeuse
+  labels:
+    app: tondeuse
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tondeuse
+  template:
+    metadata:
+      labels:
+        app: tondeuse
+    spec:
+      containers:
+        - name: tondeuse
+          image: url-registre-docker/tondeuse:latest
+          ports:
+            - containerPort: 8080

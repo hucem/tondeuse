@@ -1,0 +1,4 @@
+com\neosoft\tondeuse\domain\data\Position.class
+com\neosoft\tondeuse\domain\service\impl\MowerServiceImpl.class
+com\neosoft\tondeuse\domain\data\Mower.class
+com\neosoft\tondeuse\domain\service\MowerService.class
